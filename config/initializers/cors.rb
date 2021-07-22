@@ -5,12 +5,12 @@
 
 # Read more: https://github.com/cyu/rack-cors
 
-# Rails.application.config.middleware.insert_before 0, Rack::Cors do
-#   allow do
-#     origins 'example.com'
-#
-#     resource '*',
-#       headers: :any,
-#       methods: [:get, :post, :put, :patch, :delete, :options, :head]
-#   end
-# end
+ Rails.application.config.middleware.insert_before 0, Rack::Cors do
+   allow do
+     origins 'https://00be4bae975e4a899df39a5aeec7e624.vfs.cloud9.ap-northeast-1.amazonaws.com/'
+
+     resource '*',
+       headers: :any,
+       methods: [:get, :post, :put, :patch, :delete, :options, :head]
+   end
+ end
